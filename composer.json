@@ -1,0 +1,28 @@
+{
+    "name": "ghun/couponcodegenerator",
+    "description": "CouponCodeGenerator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ji Hun",
+            "email": "ghun2ee@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ghun\\CouponCodeGenerator\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ghun\\CouponCodeGenerator\\CouponCodeGeneratorServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    }
+}
