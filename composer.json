@@ -12,13 +12,18 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "ghun\\CouponCodeGenerator\\": "src"
+            "Ghun\\CouponCodeGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ghun\\CouponCodeGenerator\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ghun\\CouponCodeGenerator\\CouponCodeGeneratorServiceProvider"
+                "Ghun\\CouponCodeGenerator\\CouponCodeGeneratorServiceProvider"
             ]
         }
     },

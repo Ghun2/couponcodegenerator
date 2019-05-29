@@ -1,6 +1,7 @@
 <?php
 namespace ghun\CouponCodeGenerator;
 use Illuminate\Support\ServiceProvider;
+use ghun\CouponCodeGenerator\Facades\CouponCodeGenerator;
 
 class CouponCodeGeneratorServiceProvider extends ServiceProvider
 {
@@ -11,6 +12,7 @@ class CouponCodeGeneratorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->registerResources();
     }
     /**
      * Register the application services.
@@ -19,9 +21,20 @@ class CouponCodeGeneratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
+//        $this->app->singleton(CouponCodeGenerator::class, function () {
+//            return new CouponCodeGenerator();
+//        });
+//        $this->app->alias(CouponCodeGenerator::class, 'coupon-code-generator');
+    }
+    private function registerResources()
+    {
+        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+         $this->registerFacades();
+    }
+    protected function registerFacades()
+    {
         $this->app->singleton(CouponCodeGenerator::class, function () {
-            return new CouponCodeGenerator();
+            return new \ghun\CouponCodeGenerator\CouponCodeGenerator();
         });
-        $this->app->alias(CouponCodeGenerator::class, 'coupon-code-generator');
     }
 }

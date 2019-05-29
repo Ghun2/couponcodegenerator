@@ -25,10 +25,6 @@ class ComposerStaticInit53ea62d7a408489300081bb5ad6ed88d
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'g' => 
-        array (
-            'ghun\\CouponCodeGenerator\\' => 25,
-        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -84,6 +80,11 @@ class ComposerStaticInit53ea62d7a408489300081bb5ad6ed88d
         array (
             'Illuminate\\' => 11,
         ),
+        'G' => 
+        array (
+            'Ghun\\CouponCodeGenerator\\Tests\\' => 31,
+            'Ghun\\CouponCodeGenerator\\' => 25,
+        ),
         'F' => 
         array (
             'Faker\\' => 6,
@@ -112,10 +113,6 @@ class ComposerStaticInit53ea62d7a408489300081bb5ad6ed88d
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-        ),
-        'ghun\\CouponCodeGenerator\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -228,6 +225,14 @@ class ComposerStaticInit53ea62d7a408489300081bb5ad6ed88d
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'Ghun\\CouponCodeGenerator\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'Ghun\\CouponCodeGenerator\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Faker\\' => 
         array (
