@@ -1,5 +1,5 @@
 {
-    "name": "ghun/couponcodegenerator",
+    "name": "ghun2/couponcodegenerator",
     "description": "CouponCodeGenerator",
     "type": "library",
     "license": "MIT",
@@ -12,18 +12,18 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Ghun\\CouponCodeGenerator\\": "src/"
+            "ghun2\\CouponCodeGenerator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ghun\\CouponCodeGenerator\\Tests\\": "tests/"
+            "ghun2\\CouponCodeGenerator\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ghun\\CouponCodeGenerator\\CouponCodeGeneratorServiceProvider"
+                "ghun2\\CouponCodeGenerator\\CouponCodeGeneratorServiceProvider"
             ]
         }
     },

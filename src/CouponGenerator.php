@@ -1,6 +1,6 @@
 <?php
 
-namespace Ghun\CouponCodeGenerator;
+namespace ghun2\CouponCodeGenerator;
 
 class CouponGenerator
 {

@@ -1,7 +1,8 @@
 <?php
-namespace ghun\CouponCodeGenerator;
+namespace ghun2\CouponCodeGenerator;
+
 use Illuminate\Support\ServiceProvider;
-use ghun\CouponCodeGenerator\Facades\CouponCodeGenerator;
+use ghun2\CouponCodeGenerator\Facades\CouponCodeGenerator;
 
 class CouponCodeGeneratorServiceProvider extends ServiceProvider
 {
@@ -34,7 +35,7 @@ class CouponCodeGeneratorServiceProvider extends ServiceProvider
     protected function registerFacades()
     {
         $this->app->singleton(CouponCodeGenerator::class, function () {
-            return new \ghun\CouponCodeGenerator\CouponCodeGenerator();
+            return new \ghun2\CouponCodeGenerator\CouponCodeGenerator();
         });
     }
 }

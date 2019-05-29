@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ghun\CouponCodeGenerator\Facades;
+namespace ghun2\CouponCodeGenerator\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

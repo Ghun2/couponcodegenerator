@@ -1,9 +1,9 @@
 <?php
 
-namespace Ghun\CouponCodeGenerator\Tests;
+namespace ghun2\CouponCodeGenerator\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Ghun\CouponCodeGenerator\CouponGenerator;
+use ghun2\CouponCodeGenerator\CouponGenerator;
 
 class CouponCodeTest extends TestCase
 {

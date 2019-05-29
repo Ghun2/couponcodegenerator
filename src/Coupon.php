@@ -1,6 +1,6 @@
 <?php
 
-namespace ghun\CouponCodeGenerator;
+namespace ghun2\CouponCodeGenerator;
 
 use Illuminate\Database\Eloquent\Model;
 

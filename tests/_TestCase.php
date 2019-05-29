@@ -1,8 +1,8 @@
 <?php
 // 테스트 환경 셋업 (시간상 다음에) 파일이름 _ 이거 빼면 됨
-namespace Ghun\CouponCodeGenerator\Tests;
+namespace ghun2\CouponCodeGenerator\Tests;
 
-use Ghun\CouponCodeGenerator\CouponCodeGeneratorServiceProvider;
+use ghun2\CouponCodeGenerator\CouponCodeGeneratorServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
