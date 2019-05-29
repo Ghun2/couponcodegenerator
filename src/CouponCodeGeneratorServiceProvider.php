@@ -34,7 +34,7 @@ class CouponCodeGeneratorServiceProvider extends ServiceProvider
     }
     protected function registerFacades()
     {
-        $this->app->singleton(CouponCodeGenerator::class, function () {
+        $this->app->singleton('CouponCodeGenerator', function ($app) {
             return new \ghun2\CouponCodeGenerator\CouponCodeGenerator();
         });
     }

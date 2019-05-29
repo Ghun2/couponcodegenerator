@@ -3,17 +3,17 @@
 namespace ghun2\CouponCodeGenerator\Tests;
 
 use Orchestra\Testbench\TestCase;
-use ghun2\CouponCodeGenerator\CouponGenerator;
+use ghun2\CouponCodeGenerator\CouponCodeGenerator;
 
 class CouponCodeTest extends TestCase
 {
     /** @test */
     // public function generatorTest() {
-    //     dd(CouponGenerator::generate("ABQ"));
+    //     dd(CouponCodeGenerator::generate("ABQ"));
     // }
     
     // public function generatorArray() {
-    //     $myDebugVar = CouponGenerator::generate_coupons(10,"ASD");
+    //     $myDebugVar = CouponCodeGenerator::generate_coupons(10,"ASD");
         
     //     fwrite(STDERR, print_r($myDebugVar, TRUE));
     // }
@@ -31,8 +31,8 @@ class CouponCodeTest extends TestCase
                 $randprefix .= $characters[mt_rand(0, count($characters) - 1)];
             }
 
-            $myDebugVar = CouponGenerator::generate_coupons(100000,$randprefix,"AS");
-            if (!CouponGenerator::check_unique($myDebugVar)){
+            $myDebugVar = CouponCodeGenerator::generate_coupons(10,$randprefix,"AS",[1,2,3,4]);
+            if (!CouponCodeGenerator::check_unique($myDebugVar)){
                 $flag = False;
                 break;
             }
