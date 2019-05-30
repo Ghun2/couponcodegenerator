@@ -15,7 +15,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     
     protected function getEnviromentSetUp($app)
     {
-        # code...
+        # code...   테스트 환경 셋업 ( 시간상 미완성 )
         $app['config']->set('database.default','testdb');
         $app['config']->set('database.connections.testdb',[
             'driver' => 'sqlite',

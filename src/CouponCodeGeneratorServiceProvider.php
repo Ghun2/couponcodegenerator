@@ -32,7 +32,7 @@ class CouponCodeGeneratorServiceProvider extends ServiceProvider
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
          $this->registerFacades();
     }
-    protected function registerFacades()
+    protected function registerFacades()    // 파사드로 생성하여 사용 / 파사드 사용 안하려면 각각의 메소드 static 지정
     {
         $this->app->singleton('CouponCodeGenerator', function ($app) {
             return new \ghun2\CouponCodeGenerator\CouponCodeGenerator();
